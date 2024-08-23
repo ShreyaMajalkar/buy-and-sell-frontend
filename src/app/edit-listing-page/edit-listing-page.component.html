@@ -1,0 +1,11 @@
+<div class="context-box">
+    <h3>Edit Listing</h3>
+    <app-listing-data 
+    buttonText="Save Changes"
+    [currentId]="listing!.id"
+    [currentName]="listing!.name"
+    [currentDescription]="listing!.description"
+    [currentPrice]="listing!.price"
+    (onSubmit)="onSubmit($event)">
+</app-listing-data>
+</div>
